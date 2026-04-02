@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Furnitur Minimalis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="notification" id="notification" aria-live="polite"></div>
+
+    <nav class="navbar">
+        <div class="logo">KAYU.CO</div>
+
+        <div class="nav-actions">
+            <button type="button" class="nav-button" data-scroll-target="#beranda">Beranda</button>
+            <button type="button" class="nav-button" data-scroll-target="#produk">Produk</button>
+            <button type="button" class="nav-button" data-scroll-target="#promo">Promo</button>
+            <button type="button" class="cart-button" id="open-cart-btn">Keranjang (<span id="cart-count">0</span>)</button>
+        </div>
+    </nav>
+
+    <header class="hero" id="beranda">
+        <div class="hero-text">
+            <p class="label-sale">Promo Minggu Ini</p>
+            <h1>Sale Tengah Tahun</h1>
+            <p>Diskon hingga 50% untuk semua produk kayu dengan desain minimalis dan nyaman dipakai di rumah.</p>
+
+            <div class="hero-buttons">
+                <button type="button" class="btn-primary" data-scroll-target="#produk">Belanja Sekarang</button>
+                <button type="button" class="btn-secondary" data-scroll-target="#promo">Lihat Promo</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="promo-section" id="promo">
+            <h2>Promo Spesial</h2>
+
+            <div class="promo-box">
+                <p>Beli 2 produk atau lebih untuk mendapatkan informasi gratis ongkir pada area tertentu.</p>
+                <button type="button" class="btn-primary" data-scroll-target="#produk">Pilih Produk Promo</button>
+            </div>
+        </section>
+
+        <section class="product-section" id="produk">
+            <h2>Penawaran Spesial</h2>
+
+            <div class="product-grid">
+                <div class="product-card" data-name="Kursi Minimalis" data-price="450000">
+                    <img src="images/chair.jpg" alt="Kursi Minimalis">
+                    <h3>Kursi Minimalis</h3>
+                    <p class="price">Rp 450.000</p>
+                    <button type="button" class="add-to-cart">Tambah ke Keranjang</button>
+                </div>
+
+                <div class="product-card" data-name="Meja Kerja Kayu" data-price="1200000">
+                    <img src="images/desk.jpg" alt="Meja Kerja Kayu">
+                    <h3>Meja Kerja Kayu</h3>
+                    <p class="price">Rp 1.200.000</p>
+                    <button type="button" class="add-to-cart">Tambah ke Keranjang</button>
+                </div>
+
+                <div class="product-card" data-name="Lampu Sudut" data-price="250000">
+                    <img src="images/lamp.jpg" alt="Lampu Sudut">
+                    <h3>Lampu Sudut</h3>
+                    <p class="price">Rp 250.000</p>
+                    <button type="button" class="add-to-cart">Tambah ke Keranjang</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="cart-section" id="keranjang">
+            <div class="cart-header">
+                <h2>Keranjang Belanja</h2>
+                <button type="button" class="clear-cart-btn" id="clear-cart-btn">Kosongkan Keranjang</button>
+            </div>
+
+            <p id="cart-status">Keranjang masih kosong. Klik tombol produk untuk menambahkan barang.</p>
+            <ul id="cart-items"></ul>
+            <p class="cart-total">Total Belanja: <span id="cart-total">Rp 0</span></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
