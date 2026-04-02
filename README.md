@@ -1,14 +1,33 @@
 # Kelompok Perantau
+
 Pemrograman Web - RPL 4A
-* Hafizh Iltizam Ilham - 2401286
-* Juan Rezel Oktara Ramadhan - 2403469
-* Muhamad Ilham Akbar Porindo - 2403513
-* Muhammad Yasir Royyan - 2401266
+
+- Hafizh Iltizam Ilham - 2401286
+- Juan Rezel Oktara Ramadhan - 2403469
+- Muhamad Ilham Akbar Porindo - 2403513
+- Muhammad Yasir Royyan - 2401266
+
+## Deskripsi Project
+
+Project ini adalah website toko furnitur sederhana dengan tampilan mirip katalog belanja. Website dibuat menggunakan HTML, CSS, dan JavaScript dasar agar mudah dipahami oleh pemrogramer pemula.
 
 ## Fitur
-* **.**
-* **..**
+
+- Menampilkan daftar produk furnitur dengan foto produk lokal.
+- Tombol navigasi `Beranda`, `Produk`, dan `Promo` yang terhubung ke bagian halaman.
+- Fitur tambah produk ke keranjang.
+- Notifikasi sederhana di tengah layar saat produk ditambahkan atau keranjang diubah.
+- Ringkasan jumlah produk dan total belanja di keranjang.
+- Tombol untuk mengosongkan keranjang.
 
 ## Target Pengguna
-* **Mahasiswa**
-* **Masyarakat Umum**
+
+- Mahasiswa
+- Masyarakat umum
+
+## Struktur File
+
+- `index.html` untuk struktur halaman.
+- `style.css` untuk tampilan website.
+- `script.js` untuk logika tombol, notifikasi, dan keranjang.
+- Folder `images` untuk foto produk.
